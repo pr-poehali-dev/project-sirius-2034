@@ -82,7 +82,7 @@
   }
 
   .font-sentient {
-    font-family: 'PT Serif', serif;
+    font-family: "PT Serif", serif;
   }
 
   .shadow-glow {
@@ -93,7 +93,7 @@
 #webgl {
   top: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
   height: 100svh;
   width: 100%;
   z-index: 0;
@@ -106,9 +106,13 @@
 
 /* Vignette effect overlay */
 #webgl::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.6) 100%);
+  background: radial-gradient(
+    ellipse at center,
+    transparent 30%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
 }
